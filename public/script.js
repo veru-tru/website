@@ -48,7 +48,7 @@ prevBtn.addEventListener("click", () => {
     }
 });
 
-const welcome = document.getElementById('welcome');
+const welcome = document.getElementById('welcomeSection');
 setTimeout(() => {
     welcome.style.padding = '20%';
     welcome.style.opacity = '1';

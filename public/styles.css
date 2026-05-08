@@ -15,37 +15,37 @@ body {
     color: rgb(255, 255, 255);
     height: 100%;
 }
+/* WELCOME SECTION */
 
-.heading {
-    position: fixed;
-    top: 1%;
-    left: 1%;
-}
-
-img {
-    height: 50vh;
-}
-
-.heading_img {
-    height: 50px;
-    border-radius: 100%;
-}
-
-.two {
-    border: 5px solid rgb(110, 38, 255);
-}
-
-.one {
-    border: 5px solid rgb(255, 94, 0);
-}
-
-#welcome {
+#welcomeSection {
     padding: 10%;
     height: 100%;
     width: 100%;
     opacity: 0;
     transition: all 1s ease-in;
 }
+
+/* GITHUB AND LINKEDIN LINKS */
+
+.navbarLinks {
+    position: fixed;
+    top: 1%;
+    left: 1%;
+}
+
+.navbarLink {
+    height: 50px;
+    border-radius: 100%;
+}
+
+.navbarLink.github {
+    border: 5px solid rgb(255, 94, 0);
+}
+
+.navbarLink.linkedin {
+    border: 5px solid rgb(110, 38, 255);
+}
+
 
 .skills {
     display: flex;
@@ -141,15 +141,15 @@ ul {
 
 /* "my character profile section" */
 
-.main{
+.characterSection{
     margin-bottom: 20%;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.profile {
-    background-color: #242426;
+.characterProfile {
+    border: rgb(255, 94, 0) 5px solid;
     display: flex;
     margin-top: 5%;
     height: 800px;
@@ -159,7 +159,7 @@ ul {
 .character {
     height: 100%;
     width: 40%;
-    background-color: #141417;
+    background-color: #5359ad;
     display: flex;
     justify-content: center;
 }
@@ -173,7 +173,7 @@ ul {
     flex: 1 1 0px;
 }
 
-.character-content {
+.characterVisuals {
     padding: 5%;
     height: 100%;
 }
@@ -184,7 +184,6 @@ img {
 
 .skillbar {
     margin-top: 10px;
-    background-color: #141417;
     width: 1000px;
     height: 100px;
     display: flex;
@@ -193,23 +192,21 @@ img {
 
 .item {
     height: 100%;
-    width: 100%;
     display: flex;
     flex: 1 1 0px;
     justify-content: center;
     align-items: center;
-    box-sizing: border-box;
-    background-color: #141417;
-        color: aquamarine;
+    background-color: #5359ad;
+    color: white;
 }
 
 .bar {
     width: 50%;
     height: 5%;
-    background-color: aquamarine;
+    background-color: rgb(255, 94, 0);
 }
 
-.character-content p {
+.characterVisuals p {
     display: flex;
     justify-content: center;
 }
