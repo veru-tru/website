@@ -13,247 +13,280 @@
 </head>
 
 <body>
-    <div class="navbarLinks">
-        <a href="https://github.com/veru-tru"><img class="navbarLink github" src="pictures/github.png"
-                alt="https://www.flaticon.com/free-icons/github"></a>
-        <a href="https://www.linkedin.com/in/weronika-truscelli-807b4a208/"><img class="navbarLink linkedin"
-                src="pictures/linkedin.png" alt="https://www.flaticon.com/free-icons/linkedin"></a>
-    </div>
-    <div id="welcomeSection">
-        <h1>Hello, I'm Weronika.</h1>
-        <p>I am Software Tester that searches for new adventures... if You visited this website it means You are curious
-            about me! Below You will find a reason of why i learnt my skills aswell as other informations about my</p>
-    </div>
-    <div class="characterSection">
-        <div class="characterProfile">
-            <div class="character">
-                <div class="characterVisuals">
-                    <p>Veru</p>
-                    <img src="my_drawings/Untitled_Artwork.png">
+    <app>
+        <div class="navbarLinks">
+            <a href="https://github.com/veru-tru"><img class="navbarLink github" src="pictures/github.png"
+                    alt="https://www.flaticon.com/free-icons/github"></a>
+            <a href="https://www.linkedin.com/in/weronika-truscelli-807b4a208/"><img class="navbarLink linkedin"
+                    src="pictures/linkedin.png" alt="https://www.flaticon.com/free-icons/linkedin"></a>
+        </div>
+        <button class="back" data-target="back-btn">^</button>
+        <div id="welcomeSection" class="screen active">
+            <h1>Hello, I'm Weronika.</h1>
+            <p>I am Software Tester that searches for new adventures... if You visited this website it means You are
+                curious
+                about me! Below You will find a reason of why i learnt my skills aswell as other informations about my
+            </p>
+            <button data-target="characterSection"></button>
+            <button data-target="skills"></button>
+            <button data-target="space"></button>
+            <button data-target="about_me"></button>
+            <button data-target="carousel"></button>
+        </div>
+        <div id="characterSection" class="characterSection screen">
+            <div class="characterProfile">
+                <div class="character">
+                    <div class="characterVisuals">
+                        <p>Veru</p>
+                        <img src="my_drawings/Untitled_Artwork.png">
+                    </div>
+                </div>
+                <div class="statistics-space">
+                    <div id="skill" class="statistic-section">
+                        <div class="group">
+                            <p>Selenium</p>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="group">
+                            <p>Ubuntu</p>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="group">
+                            <p>Git</p>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="group">
+                            <p>SQL</p>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="group">
+                            <p>Jira</p>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="group">
+                            <p>Confluence</p>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="group">
+                            <p>Python</p>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="group">
+                            <p>ArcGIS Pro</p>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="group">
+                            <p>RabbitMQ</p>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="group">
+                            <p>Jenkins</p>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="group">
+                            <p>Docker</p>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <div id="professions" class="statistic-section">
+                        <div class="group">
+                            <p>Gry komputerowe</p>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="group">
+                            <p>Język hiszpański</p>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="group">
+                            <p>Rysunek</p>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="group">
+                            <p>Matematyka</p>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <div id="strenghts" class="statistic-section">
+                        <div class="group">
+                            <p>Team work</p>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="group">
+                            <p>Idea maker</p>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="group">
+                            <p>Involved</p>
+                            <div class="bar"></div>
+                        </div>
+                        <div class="group">
+                            <p>Leader</p>
+                            <div class="bar"></div>
+                        </div>
+                    </div>
+                    <div id="experience" class="statistic-section">
+                        <div class="group">
+                            <p>Software tester - Komputronik S.A.</p>
+                            <p>testowanie manualne sklepu oraz aplikacji mobilnej, testy E2E
+                                • analiza logów w terminalu linux, baz danych przy użyciu SQL oraz kolejek
+                                RabbitMQ
+                                • tworzenie podstawowych testów automatycznych w Python, Selenium w celu
+                                testowania regresji, uruchamianie testów w Jenkins’ie
+                                • raportowanie błędów w Jira, tworzenie dokumentacji dotyczącej rozwojów i
+                                nowych funkcjonalności w Confluence
+                                • testowanie integracji sklepu z systemami PIM, ERP oraz systemami płatności
+                                • testy API w postman</p>
+                        </div>
+                        <div class="group">
+                            <p>Geoinformation Operator - Phoenics sp. z o.o.</p>
+                            <p>
+                                analiza zdjęć lotniczych i klasyfikacja obiektów wg wskazanych kryteriów
+                                • georeferencja oraz wektoryzacja danych (obiekty punktowe, liniowe, poligony)
+                                • pozyskiwanie danych 3D (tworzenie stereomap)
+                                • automatyzacja tworzenia wydruków mapowych w języku python
+                                • trenowanie modelu sztucznej inteligencji w porgramie ArcGIS Pro w celu detekcji
+                                dachów budynków
+                            </p>
+                        </div>
+                        <div class="group">
+                            <p>Enviromental management specialist - UAM</p>
+                            <p> Praca licencjacka: „Wykorzystanie analizy wielokryterialnej w celu indentyfikacji
+                                obszarów cennych krajobrazowo”. </p>
+                        </div>
+                        <div class="group">
+                            <p>Python base course - UAM</p>
+                            <p>Kurs programowania w języku python ukończony egzaminem końcowym. </p>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="statistics-space">
-                <div id="skill" class="statistic-section">
-                    <div class="group">
-                        <p>Selenium</p>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="group">
-                        <p>Ubuntu</p>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="group">
-                        <p>Git</p>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="group">
-                        <p>SQL</p>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="group">
-                        <p>Jira</p>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="group">
-                        <p>Confluence</p>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="group">
-                        <p>Python</p>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="group">
-                        <p>ArcGIS Pro</p>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="group">
-                        <p>RabbitMQ</p>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="group">
-                        <p>Jenkins</p>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="group">
-                        <p>Docker</p>
-                        <div class="bar"></div>
-                    </div>
-                </div>
-                <div id="professions" class="statistic-section">
-                    <div class="group">
-                        <p>Gry komputerowe</p>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="group">
-                        <p>Język hiszpański</p>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="group">
-                        <p>Rysunek</p>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="group">
-                        <p>Matematyka</p>
-                        <div class="bar"></div>
-                    </div>
-                </div>
-                <div id="strenghts" class="statistic-section">
-                    <div class="group">
-                        <p>Team work</p>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="group">
-                        <p>Idea maker</p>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="group">
-                        <p>Involved</p>
-                        <div class="bar"></div>
-                    </div>
-                    <div class="group">
-                        <p>Leader</p>
-                        <div class="bar"></div>
-                    </div>
-                </div>
-                <div id="experience" class="statistic-section">
-                    <div class="group">
-                        <p>Software tester - Komputronik S.A.</p>
-                        <p>testowanie manualne sklepu oraz aplikacji mobilnej, testy E2E
-                            • analiza logów w terminalu linux, baz danych przy użyciu SQL oraz kolejek
-                            RabbitMQ
-                            • tworzenie podstawowych testów automatycznych w Python, Selenium w celu
-                            testowania regresji, uruchamianie testów w Jenkins’ie
-                            • raportowanie błędów w Jira, tworzenie dokumentacji dotyczącej rozwojów i
-                            nowych funkcjonalności w Confluence
-                            • testowanie integracji sklepu z systemami PIM, ERP oraz systemami płatności
-                            • testy API w postman</p>
-                    </div>
-                    <div class="group">
-                        <p>Geoinformation Operator - Phoenics sp. z o.o.</p>
-                        <p>
-                            analiza zdjęć lotniczych i klasyfikacja obiektów wg wskazanych kryteriów
-                            • georeferencja oraz wektoryzacja danych (obiekty punktowe, liniowe, poligony)
-                            • pozyskiwanie danych 3D (tworzenie stereomap)
-                            • automatyzacja tworzenia wydruków mapowych w języku python
-                            • trenowanie modelu sztucznej inteligencji w porgramie ArcGIS Pro w celu detekcji
-                            dachów budynków
-                        </p>
-                    </div>
-                    <div class="group">
-                        <p>Enviromental management specialist - UAM</p>
-                        <p> Praca licencjacka: „Wykorzystanie analizy wielokryterialnej w celu indentyfikacji
-                            obszarów cennych krajobrazowo”. </p>
-                    </div>
-                    <div class="group">
-                        <p>Python base course - UAM</p>
-                        <p>Kurs programowania w języku python ukończony egzaminem końcowym. </p>
-                    </div>
-                </div>
+            <div class="skillbar">
+                <button class="item" onclick="sectionClick('skill')">SKILLS</button>
+                <button class="item" onclick="sectionClick('professions')">PROFESSIONS</button>
+                <button class="item" onclick="sectionClick('strenghts')">STRENGHTS</button>
+                <button class="item" onclick="sectionClick('experience')">EXPERIENCE</button>
             </div>
         </div>
-        <div class="skillbar">
-            <button class="item" onclick="sectionClick('skill')">SKILLS</button>
-            <button class="item" onclick="sectionClick('professions')">PROFESSIONS</button>
-            <button class="item" onclick="sectionClick('strenghts')">STRENGHTS</button>
-            <button class="item" onclick="sectionClick('experience')">EXPERIENCE</button>
+        <!-- <canvas id = "canvas" width = "500px" height ="300px"></canvas> -->
+        <div id="skills" class="screen">
+            <div class="skill">
+                <h2>ARCGIS</h2>
+                <img class="skills-photo" src="pictures/gis.png" alt="bsd">
+                <p>Learning about ArcMap during my university years has been always my favourite part of the week. I
+                    decided
+                    to focus more on how we can interpret data and visualise it using ArcMap toolbox, thats why i
+                    decided to
+                    use the knowledge about ArcMap in my bachleor work. Later on in my first job i got to know about
+                    newer
+                    product of Esri which is ArcGIS Pro. The endless possibilities of manipulating data has inspired me
+                    to
+                    deepen my knowledge about ArcGIS and its arcpy library.</p>
+            </div>
+            <div class="skill">
+                <h2>JAVASCRIPT HTML CSS</h2>
+                <img class="skills-photo" src="pictures/js.png" alt="vectorsmarket15">
+                <p>My journey with frontend tools started out of my curiosity, I have been always wondering how websites
+                    are
+                    created. NOW I KNOW! Yet there is still huge journey in front of me and my curiosity is not focused
+                    only
+                    on frontend... now my other question is HOW THE BACKEND EXACTLY WORKS?! The best thing i love about
+                    myself is that i know that its just a matter of time and i will get answer for my question!</p>
+            </div>
+            <div class="skill">
+                <h2>SQL</h2>
+                <img class="skills-photo" src="pictures/sql.png" alt="Freepik">
+                <p>Query language was something that I stumbled on while exploring about backend, i instantly felt in
+                    love
+                    with SQL - for its simplicity and usefullness. Structured database management is so satisfying and
+                    at
+                    the same time challenging - which is perfect match for me!</p>
+            </div>
+            <div class="skill">
+                <h2>PYTHON</h2>
+                <img class="skills-photo" src="pictures/python.png" alt="Foxland">
+                <p>I have attended to basic python course at that time i realized how useful it can be with data
+                    manipulation and automation it works perfectly with ArcGIS Pro due to arcpy library. It allowed me
+                    to
+                    create simple code to automate map printouts of chosen properties.</p>
+            </div>
+            <div class="skill">
+                <h2>TESTING</h2>
+                <img class="skills-photo" src="pictures/tester.png" alt="Muhammad Ali">
+                <p>I got to know about testing importance because of my friend, she inspired me to learn more about it.
+                    At
+                    the beggining understanding ISTQB syllabus was hard, but after expanding my knowledge about testing
+                    i
+                    can admit that everything in syllabus has its own meaning and great sense. In testing i put emphasis
+                    on
+                    communication, documentation, constant learning and analythical thinking.</p>
+            </div>
         </div>
-    </div>
-    <!-- <canvas id = "canvas" width = "500px" height ="300px"></canvas> -->
-    <div class="skills">
-        <div class="skill">
-            <h2>ARCGIS</h2>
-            <img class="skills-photo" src="pictures/gis.png" alt="bsd">
-            <p>Learning about ArcMap during my university years has been always my favourite part of the week. I decided
-                to focus more on how we can interpret data and visualise it using ArcMap toolbox, thats why i decided to
-                use the knowledge about ArcMap in my bachleor work. Later on in my first job i got to know about newer
-                product of Esri which is ArcGIS Pro. The endless possibilities of manipulating data has inspired me to
-                deepen my knowledge about ArcGIS and its arcpy library.</p>
+        <div id="space" class="screen">
+            <h2>Now its time to get to know more about my passions</h2>
         </div>
-        <div class="skill">
-            <h2>JAVASCRIPT HTML CSS</h2>
-            <img class="skills-photo" src="pictures/js.png" alt="vectorsmarket15">
-            <p>My journey with frontend tools started out of my curiosity, I have been always wondering how websites are
-                created. NOW I KNOW! Yet there is still huge journey in front of me and my curiosity is not focused only
-                on frontend... now my other question is HOW THE BACKEND EXACTLY WORKS?! The best thing i love about
-                myself is that i know that its just a matter of time and i will get answer for my question!</p>
+        <div id="about_me" class="screen">
+            <div class="about">
+                <h2>NATURE</h2>
+                <p>At certain point of my life i started to appreciate nature and so now i'm grateful everyday when i
+                    hear
+                    birds singging and sun shining, my dream is to live simple life with a garden and my own vegetables
+                    on
+                    the outskirts of the city. My university taught me a lot about relationship between components of
+                    the
+                    nature and so now im able to see all the integrity which is beautiful.</p>
+            </div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="about">
+                <h2>SPANISH</h2>
+                <p>My journey with spanish is strongly connected to games, having friends talking in spanish around You
+                    can
+                    be frustrating... and if i can't understand something - i will sure find a way to solve my problem!
+                    I'm
+                    mostly learning argentinian accent of spanish - go and see the difference between argentinian and
+                    spanish one! </p>
+            </div>
+            <div class="about">
+                <h2>MATH</h2>
+                <p>Math has always been my favourite subject. When i had to make a choice of major at university there
+                    were
+                    two options playing in my brain: Math or Environment management? Do i regret? No. Yet there is a
+                    part of
+                    my heart waiting to be filled with my "eureka" moments while learning math and I am certain I will
+                    find
+                    my time to be fullfilled.</p>
+            </div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="about">
+                <h2>GAMES</h2>
+                <p>I have always been competetive gamer and my will of improvement has never faded away. I'm in love
+                    with
+                    MMO RPGs, shooters or any coop games at which i can have fun with my friends. Have You ever heared
+                    about
+                    World of Warcraft, Aion or Valorant? Well... You might find me there!</p>
+            </div>
+            <div class="about">
+                <h2>DRAWING</h2>
+                <p>I lived with the wrong mindset "if You want to be an artist, You have to be blessed with talent"...
+                    well... NO! To be able to draw You just have to put a lot of hard work and once i understood it I
+                    started to progress. I treat drawing as learning hobby and so i do it in my own pace... im still at
+                    the
+                    beggining of my journey, maybe You want to join?</p>
+            </div>
+            <div class="circle"></div>
         </div>
-        <div class="skill">
-            <h2>SQL</h2>
-            <img class="skills-photo" src="pictures/sql.png" alt="Freepik">
-            <p>Query language was something that I stumbled on while exploring about backend, i instantly felt in love
-                with SQL - for its simplicity and usefullness. Structured database management is so satisfying and at
-                the same time challenging - which is perfect match for me!</p>
+        <div id="carousel" class="screen">
+            <button class="carousel-btn prev">Prev</button>
+            <button class="carousel-btn next">Next</button>
+            <ul>
+                <li class="slide" id="1" data-active><img src="my_drawings/Artwork_4.png" alt="hold"></li>
+                <li class="slide" id="2"><img src="my_drawings/Artwork_5.png" alt="hold"></li>
+                <li class="slide" id="3"><img src="my_drawings/Artwork_7.png" alt="hold"></li>
+            </ul>
         </div>
-        <div class="skill">
-            <h2>PYTHON</h2>
-            <img class="skills-photo" src="pictures/python.png" alt="Foxland">
-            <p>I have attended to basic python course at that time i realized how useful it can be with data
-                manipulation and automation it works perfectly with ArcGIS Pro due to arcpy library. It allowed me to
-                create simple code to automate map printouts of chosen properties.</p>
-        </div>
-        <div class="skill">
-            <h2>TESTING</h2>
-            <img class="skills-photo" src="pictures/tester.png" alt="Muhammad Ali">
-            <p>I got to know about testing importance because of my friend, she inspired me to learn more about it. At
-                the beggining understanding ISTQB syllabus was hard, but after expanding my knowledge about testing i
-                can admit that everything in syllabus has its own meaning and great sense. In testing i put emphasis on
-                communication, documentation, constant learning and analythical thinking.</p>
-        </div>
-    </div>
-    <div class="space">
-        <h2>Now its time to get to know more about my passions</h2>
-    </div>
-    <div class="about_me">
-        <div class="about">
-            <h2>NATURE</h2>
-            <p>At certain point of my life i started to appreciate nature and so now i'm grateful everyday when i hear
-                birds singging and sun shining, my dream is to live simple life with a garden and my own vegetables on
-                the outskirts of the city. My university taught me a lot about relationship between components of the
-                nature and so now im able to see all the integrity which is beautiful.</p>
-        </div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="about">
-            <h2>SPANISH</h2>
-            <p>My journey with spanish is strongly connected to games, having friends talking in spanish around You can
-                be frustrating... and if i can't understand something - i will sure find a way to solve my problem! I'm
-                mostly learning argentinian accent of spanish - go and see the difference between argentinian and
-                spanish one! </p>
-        </div>
-        <div class="about">
-            <h2>MATH</h2>
-            <p>Math has always been my favourite subject. When i had to make a choice of major at university there were
-                two options playing in my brain: Math or Environment management? Do i regret? No. Yet there is a part of
-                my heart waiting to be filled with my "eureka" moments while learning math and I am certain I will find
-                my time to be fullfilled.</p>
-        </div>
-        <div class="circle"></div>
-        <div class="circle"></div>
-        <div class="about">
-            <h2>GAMES</h2>
-            <p>I have always been competetive gamer and my will of improvement has never faded away. I'm in love with
-                MMO RPGs, shooters or any coop games at which i can have fun with my friends. Have You ever heared about
-                World of Warcraft, Aion or Valorant? Well... You might find me there!</p>
-        </div>
-        <div class="about">
-            <h2>DRAWING</h2>
-            <p>I lived with the wrong mindset "if You want to be an artist, You have to be blessed with talent"...
-                well... NO! To be able to draw You just have to put a lot of hard work and once i understood it I
-                started to progress. I treat drawing as learning hobby and so i do it in my own pace... im still at the
-                beggining of my journey, maybe You want to join?</p>
-        </div>
-        <div class="circle"></div>
-    </div>
-    <div class="carousel">
-        <button class="carousel-btn prev">Prev</button>
-        <button class="carousel-btn next">Next</button>
-        <ul>
-            <li class="slide" id="1" data-active><img src="my_drawings/Artwork_4.png" alt="hold"></li>
-            <li class="slide" id="2"><img src="my_drawings/Artwork_5.png" alt="hold"></li>
-            <li class="slide" id="3"><img src="my_drawings/Artwork_7.png" alt="hold"></li>
-        </ul>
-    </div>
-    <script src="script.js"></script>
+        <script src="script.js"></script>
+    </app>
 </body>
 
 </html>

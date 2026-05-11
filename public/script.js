@@ -3,7 +3,6 @@ const prevBtn = document.querySelector(".prev");
 let activeSlide = document.querySelector("[data-active]");
 let idNumber = Number(activeSlide.id)
 
-
 console.log(idNumber)
 
 nextBtn.addEventListener("click", () => {
@@ -48,11 +47,11 @@ prevBtn.addEventListener("click", () => {
     }
 });
 
-const welcome = document.getElementById('welcomeSection');
-setTimeout(() => {
-    welcome.style.padding = '20%';
-    welcome.style.opacity = '1';
-}, 1000);
+// const welcome = document.getElementById('welcomeSection');
+// setTimeout(() => {
+//     welcome.style.padding = '20%';
+//     welcome.style.opacity = '1';
+// }, 1000);
 
 function sectionClick(id) {
     const sections = document.querySelectorAll(".statistic-section")
@@ -62,3 +61,23 @@ function sectionClick(id) {
     });
     document.getElementById(id).classList.add("active");
 }
+
+
+const buttons = document.querySelectorAll("button");
+const screens = document.querySelectorAll(".screen");
+
+buttons.forEach(button => {
+    button.addEventListener("click", () => {
+        const target = button.dataset.target;
+        console.log(target)
+        screens.forEach(screen => {
+            screen.classList.remove("active");
+        });
+        if (target === "back-btn") {
+            document.getElementById("welcomeSection").classList.add("active");
+        }
+        else {
+            document.getElementById(target).classList.add("active");
+        }
+    });
+});

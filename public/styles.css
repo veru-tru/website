@@ -9,23 +9,20 @@ html {
 }
 
 body {
+    overflow: hidden;
     display: block;
     background-color: rgb(5, 9, 17);
     font-family: "Montserrat", sans-serif;
     color: rgb(255, 255, 255);
     height: 100%;
 }
-/* WELCOME SECTION */
 
 #welcomeSection {
-    padding: 10%;
-    height: 100%;
-    width: 100%;
-    opacity: 0;
-    transition: all 1s ease-in;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-/* GITHUB AND LINKEDIN LINKS */
 
 .navbarLinks {
     position: fixed;
@@ -46,8 +43,13 @@ body {
     border: 5px solid rgb(110, 38, 255);
 }
 
+.back{
+    background-color: #5359ad;
+    position: absolute;
+    right: 50%;
+}
 
-.skills {
+/* .skills {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -103,7 +105,7 @@ canvas {
 
 ul {
     list-style-type: none;
-}
+} */
 
 
 .carousel {
@@ -138,8 +140,6 @@ ul {
 .next {
     right: 0;
 }
-
-/* "my character profile section" */
 
 .characterSection{
     margin-bottom: 20%;
@@ -176,10 +176,6 @@ ul {
 .characterVisuals {
     padding: 5%;
     height: 100%;
-}
-
-img {
-    height: 90%;
 }
 
 .skillbar {
@@ -220,3 +216,27 @@ img {
     display: flex;
     flex-direction: column;
 }
+
+button{
+    width: 50px;
+    height: 50px;
+    z-index: 1;
+}
+
+.screen {
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+
+    transition:
+    opacity 0.5s ease,
+    visibility 0.5s ease;
+  }
+
+  .screen.active {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
